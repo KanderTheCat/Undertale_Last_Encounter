@@ -1,5 +1,5 @@
 body{
-    background-image: url('background.gif');
+    background-image: url('../background.gif');
     background-color: rgb(13, 4, 46);
 }
 h1{
