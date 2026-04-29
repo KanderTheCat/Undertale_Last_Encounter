@@ -1,5 +1,5 @@
 body{
-    background-image: url('background.gif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.gif');
     background-color: rgb(13, 4, 46);
 }
 h1{
