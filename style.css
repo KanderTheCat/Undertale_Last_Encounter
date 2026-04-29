@@ -1,13 +1,52 @@
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.gif');
+@font-face{
+    font-family: 'Determination-Mono';
+    src: url('determinationmonoweb-webfont.ttf');
+}
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(45, 4, 34, 0.7)), url('background.gif');
     background-color: rgb(13, 4, 46);
+    padding-top: 100px;
+    margin: 5px;
+    background-attachment: fixed;
 }
 header{
-    position: sticky;
-    width: 100%;
-    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 100px;
     background-color: black;
     float: left;
+    margin: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1, nav{
+    margin: 0 10px 0 10px;
+}
+a{
+    font-family: 'Determination-Mono';
+    text-align: center;
+    background-color: rgb(50, 50, 52);
+    display: inline-block;
+    min-width: 100px;
+    width: auto;
+    text-decoration: none;
+    color: rgb(255, 137, 3);
+    font-size: 23px;
+    transition: font-size 1s;
+    margin: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2px;
+}
+a:hover{
+    color: rgb(255, 204, 84);
+    font-size: 33px;
 }
 aside{
     width: 20%;
@@ -21,9 +60,19 @@ aside{
     float: left;
 }
 footer{
-    width: 100%;
+    background-color: black;
+    left: 0;
+    right: 0;
+    width: auto;
     height: 5%;
     clear: both;
+    text-align: right;
+    margin: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+p{
+    color: white;
 }
 h1{
     color: white;
