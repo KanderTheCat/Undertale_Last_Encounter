@@ -2,6 +2,32 @@
     font-family: 'Determination-Mono';
     src: url('determinationmonoweb-webfont.ttf');
 }
+.monster-text {
+  position: relative;
+  font-family: 'MonsterFriend', sans-serif;
+  color: black;
+  font-size: 80px;
+  z-index: 3;
+}
+.monster-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'MonsterFriend-Center';
+  color: yellow;
+  z-index: 2;
+}
+.monster-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'MonsterFriend-Back';
+  color: red;
+  z-index: 1;
+}
+
 body{
     font-family: sans-serif;
     background-image: linear-gradient(rgba(45, 4, 34, 0.7)), url('background.gif');
