@@ -2,14 +2,14 @@
     font-family: 'Determination-Mono';
     src: url('determinationmonoweb-webfont.ttf');
 }
-.monster-text {
+.monster2 {
   position: relative;
   font-family: 'MonsterFriend', sans-serif;
   color: black;
   font-size: 80px;
   z-index: 3;
 }
-.monster-text::before {
+.monster2::before {
   content: attr(data-text);
   position: absolute;
   left: 0;
@@ -18,7 +18,7 @@
   color: yellow;
   z-index: 2;
 }
-.monster-text::after {
+.monster2::after {
   content: attr(data-text);
   position: absolute;
   left: 0;
